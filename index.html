@@ -1,0 +1,26 @@
+<html><head><base href=".">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="titleScreen" class="title-screen">
+  <h1>Sugar Crush</h1>
+  <div class="main-menu">
+    <button class="menu-button" onclick="startGame()">Start Game</button>
+  </div>
+</div>
+<div class="game-container">
+  <div class="powerup">
+    <button class="powerup-btn" id="bomb" onclick="usePowerup('bomb')"><img src="assets/candies/19.png"> Bomb (1)</button>
+    <button class="powerup-btn" id="shuffle" onclick="usePowerup('shuffle')"><img src="assets/candies/18.png"> Shuffle (1)</button>
+  </div>
+  <div class="level-info">Level: <span id="level">1</span></div>
+  <div class="score-board">
+    <div>Score: <span id="score">0</span></div>
+    <div>Target: <span id="target">100</span></div>
+    <div>Moves Left: <span id="moves">15</span></div>
+  </div>
+  <div class="grid" id="grid"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
